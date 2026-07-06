@@ -3,6 +3,7 @@
 These test the routing logic and parsing in isolation, with no model or database,
 so they run in CI without Ollama or Postgres.
 """
+
 from langgraph.graph import END
 
 from src.agent import graph, nodes
@@ -32,7 +33,9 @@ def test_decide_after_check_ends_when_grounded():
 
 
 def test_decide_after_check_regenerates_once_when_ungrounded():
-    assert graph._decide_after_check({"grounded": False, "generations": 1}) == "generate"
+    assert (
+        graph._decide_after_check({"grounded": False, "generations": 1}) == "generate"
+    )
 
 
 def test_decide_after_check_stops_after_two_generations():
