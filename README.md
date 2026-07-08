@@ -1,8 +1,8 @@
 # RagFlowProPlus
 
-**A self correcting, confidence gated agentic RAG. The 2025 Agentic rung of the RagFlow line.**
+**A self correcting, confidence gated agentic RAG. Part of the RagFlow line.**
 
-**Part of the RagFlow line, enterprise RAG built year by year. This repository is RagFlowProPlus, Agentic RAG, 2025.** See [the full line](#the-ragflow-line) below.
+**Part of the RagFlow line, a series of reference enterprise RAG implementations. This repository is RagFlowProPlus, Agentic RAG.** See [the full line](#the-ragflow-line) below.
 
 RagFlowProPlus does not answer in one shot. It plans, retrieves, grades its own evidence, rewrites the query and retrieves again when the evidence is weak, and verifies the answer is grounded before returning it. The loop is a bounded LangGraph state machine on top of the RagFlowPro backbone (Postgres and pgvector hybrid retrieval, a cross encoder reranker), and it runs fully locally on Ollama at no cost.
 
@@ -145,7 +145,7 @@ docker/           Dockerfile and Compose stack
 
 ## The RagFlow line
 
-RagFlowProPlus is the 2025 rung in a year by year line of enterprise RAG systems, each a faithful snapshot of the best production RAG of its year.
+RagFlowProPlus is one implementation in the RagFlow line, a series demonstrating distinct enterprise RAG retrieval strategies.
 
 | Year | Repository | Generation |
 |---|---|---|
@@ -155,7 +155,7 @@ RagFlowProPlus is the 2025 rung in a year by year line of enterprise RAG systems
 | 2025 | RagFlowProPlus, this repo | Agentic RAG, self correcting with confidence grading |
 | 2026 | [RagFlowProMax](https://github.com/mlvpatel/RagFlowProMax), UltimateRAG | Multi agent enterprise, multimodal |
 
-Every rung is measured on the same golden questions, keyless, in the [rag-catalog](https://github.com/mlvpatel/rag-catalog) hub.
+Every implementation is measured on the same golden questions, keyless, in the [rag-catalog](https://github.com/mlvpatel/rag-catalog) hub.
 
 ## Author
 
