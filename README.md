@@ -1,22 +1,22 @@
-# RagFlowProPlus
+# rag-agentic-2025
 
-**A self correcting, confidence gated agentic RAG. Part of the RagFlow line.**
+**A self correcting, confidence gated agentic RAG. Part of the RAG line.**
 
-**Part of the RagFlow line, a series of reference enterprise RAG implementations. This repository is RagFlowProPlus, Agentic RAG.** See [the full line](#the-ragflow-line) below.
+**Part of the RAG line, a series of reference enterprise RAG implementations. This repository is rag-agentic-2025, Agentic RAG.** See [the full line](#the-rag_naive-line) below.
 
-RagFlowProPlus does not answer in one shot. It plans, retrieves, grades its own evidence, rewrites the query and retrieves again when the evidence is weak, and verifies the answer is grounded before returning it. The loop is a bounded LangGraph state machine on top of the RagFlowPro backbone (Postgres and pgvector hybrid retrieval, a cross encoder reranker), and it runs fully locally on Ollama at no cost.
+rag-agentic-2025 does not answer in one shot. It plans, retrieves, grades its own evidence, rewrites the query and retrieves again when the evidence is weak, and verifies the answer is grounded before returning it. The loop is a bounded LangGraph state machine on top of the rag-modular-2023 backbone (Postgres and pgvector hybrid retrieval, a cross encoder reranker), and it runs fully locally on Ollama at no cost.
 
-[![CI](https://github.com/mlvpatel/RagFlowProPlus/actions/workflows/ci.yml/badge.svg)](https://github.com/mlvpatel/RagFlowProPlus/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.11-blue) ![LangGraph](https://img.shields.io/badge/agent-LangGraph-blue) ![Postgres](https://img.shields.io/badge/Postgres-pgvector-blue) ![License](https://img.shields.io/badge/license-MIT-green)
+[![CI](https://github.com/mlvpatel/rag-agentic-2025/actions/workflows/ci.yml/badge.svg)](https://github.com/mlvpatel/rag-agentic-2025/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.11-blue) ![LangGraph](https://img.shields.io/badge/agent-LangGraph-blue) ![Postgres](https://img.shields.io/badge/Postgres-pgvector-blue) ![License](https://img.shields.io/badge/license-MIT-green)
 
-![RagFlowProPlus answering with its reasoning trace on a local model](assets/videos/ragflowproplus-demo.gif)
+![rag-agentic-2025 answering with its reasoning trace on a local model](assets/videos/rag_agentic-demo.gif)
 
-The clip above is a live, unedited run on a local qwen2.5 model over pgvector. The expandable trace shows the agent retrieve, grade, generate, and self check, with a confidence score. A full resolution screenshot is at [assets/screenshots/ragflowproplus-ui.png](assets/screenshots/ragflowproplus-ui.png). No paid keys were used.
+The clip above is a live, unedited run on a local qwen2.5 model over pgvector. The expandable trace shows the agent retrieve, grade, generate, and self check, with a confidence score. A full resolution screenshot is at [assets/screenshots/rag_agentic-ui.png](assets/screenshots/rag_agentic-ui.png). No paid keys were used.
 
 ## What makes it agentic
 
 The engine follows the planning patterns of a real agent, each mapped to a node in a bounded graph:
 
-| Planning pattern | In RagFlowProPlus |
+| Planning pattern | In rag-agentic-2025 |
 |---|---|
 | ReAct loop, thought, action, observation | retrieve (action), grade (observation), decide (thought) |
 | Plan validation | a grader scores whether the retrieved context can answer the question, with a confidence value |
@@ -143,19 +143,17 @@ tests/            unit and integration tests
 docker/           Dockerfile and Compose stack
 ```
 
-## The RagFlow line
+## The RAG line
 
-RagFlowProPlus is one implementation in the RagFlow line, a series demonstrating distinct enterprise RAG retrieval strategies.
+rag-agentic-2025 is one implementation in the RAG line, a series demonstrating distinct enterprise RAG retrieval strategies.
 
 | Year | Repository | Generation |
 |---|---|---|
-| 2022 | [RagFlow](https://github.com/mlvpatel/RagFlow) | Naive RAG, single dense retrieval |
-| 2023 | [RagFlowPlus](https://github.com/mlvpatel/RagFlowPlus) | Advanced RAG, hybrid retrieval and reranking |
-| 2024 | [RagFlowPro](https://github.com/mlvpatel/RagFlowPro) | Modular production RAG, pgvector, streaming, evaluation |
-| 2025 | RagFlowProPlus, this repo | Agentic RAG, self correcting with confidence grading |
-| 2026 | [RagFlowProMax](https://github.com/mlvpatel/RagFlowProMax), UltimateRAG | Multi agent enterprise, multimodal |
-
-Every implementation is measured on the same golden questions, keyless, in the [rag-catalog](https://github.com/mlvpatel/rag-catalog) hub.
+| 2022 | [rag-naive-2022](https://github.com/mlvpatel/rag-naive-2022) | Naive RAG, single dense retrieval |
+| 2023 | [rag-advanced-2023](https://github.com/mlvpatel/rag-advanced-2023) | Advanced RAG, hybrid retrieval and reranking |
+| 2024 | [rag-modular-2023](https://github.com/mlvpatel/rag-modular-2023) | Modular production RAG, pgvector, streaming, evaluation |
+| 2025 | rag-agentic-2025, this repo | Agentic RAG, self correcting with confidence grading |
+| 2026 | [rag-multiagent-2026](https://github.com/mlvpatel/rag-multiagent-2026), rag-multimodal-2026 | Multi agent enterprise, multimodal |
 
 ## Author
 

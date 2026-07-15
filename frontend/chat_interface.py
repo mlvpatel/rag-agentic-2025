@@ -1,4 +1,4 @@
-"""Chat interface for the RagFlowProPlus Streamlit app.
+"""Chat interface for the rag-agentic-2025 Streamlit app.
 
 Shows the answer plus an expandable trace of the agent's reasoning steps
 (retrieve, grade, rewrite, generate, self-check), so the self-correction is
