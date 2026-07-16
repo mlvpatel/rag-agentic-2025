@@ -6,9 +6,7 @@ Part of the RAG line, a series of reference enterprise RAG implementations, one 
 
 [![CI](https://github.com/mlvpatel/rag-agentic-2025/actions/workflows/ci.yml/badge.svg)](https://github.com/mlvpatel/rag-agentic-2025/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.11-blue) ![LangGraph](https://img.shields.io/badge/agent-LangGraph-blue) ![Postgres](https://img.shields.io/badge/Postgres-pgvector-blue) ![License](https://img.shields.io/badge/license-MIT-green)
 
-![rag-agentic-2025 answering with its reasoning trace on a local model](assets/videos/rag-agentic-2025-demo.gif)
-
-The clip above is a live, unedited run on a local qwen2.5 model over pgvector. The expandable trace shows the agent retrieve, grade, generate, and self check, with a confidence score. A full resolution screenshot is at [assets/screenshots/rag-agentic-2025-ui.png](assets/screenshots/rag-agentic-2025-ui.png). No paid keys were used.
+![RagChatBot banner](assets/banner.svg)
 
 ## Contents
 

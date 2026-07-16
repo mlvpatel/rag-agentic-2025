@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="RagChatBot, Agentic RAG">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f1215"/>
+      <stop offset="1" stop-color="#4c0519"/>
+    </linearGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fb7185"/>
+      <stop offset="1" stop-color="#fda4af"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" rx="18" fill="url(#bg)"/>
+  <rect x="1.5" y="1.5" width="1197" height="357" rx="17" fill="none" stroke="#fb7185" stroke-opacity="0.25" stroke-width="3"/>
+
+  <!-- title block -->
+  <rect x="64" y="74" width="56" height="10" rx="5" fill="url(#ac)"/>
+  <text x="64" y="146" font-family="Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#f8fafc">RagChatBot</text>
+  <text x="64" y="196" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#fb7185">Agentic RAG</text>
+  <text x="64" y="232" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#cbd5e1">grades its evidence, rewrites, self checks</text>
+  <rect x="64" y="258" width="186.0" height="34" rx="17" fill="#f8fafc" fill-opacity="0.08" stroke="#fb7185" stroke-opacity="0.5"/>
+  <text x="157.0" y="281" font-family="ui-monospace, Menlo, monospace" font-size="17" fill="#fda4af" text-anchor="middle">rag-agentic-2025</text>
+
+  <!-- year badge -->
+  <rect x="1066" y="34" width="70" height="32" rx="16" fill="#fb7185" fill-opacity="0.16" stroke="#fb7185" stroke-opacity="0.55"/>
+  <text x="1101" y="56" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#fda4af" text-anchor="middle">2025</text>
+
+  <!-- motif -->
+  
+  <g fill="none" stroke-linecap="round">
+    <path d="M 930 96 A 84 84 0 1 1 846 180" stroke="url(#ac)" stroke-width="7"/>
+    <polygon points="846,158 834,186 862,182" fill="#fda4af"/>
+    <circle cx="930" cy="96" r="9" fill="#fb7185"/>
+    <circle cx="1014" cy="180" r="9" fill="#fb7185"/>
+    <circle cx="930" cy="264" r="9" fill="#fb7185"/>
+    <text x="960" y="86" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#cbd5e1">retrieve</text>
+    <text x="1036" y="186" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#cbd5e1">grade</text>
+    <text x="958" y="292" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#cbd5e1">rewrite</text>
+    <circle cx="930" cy="180" r="34" fill="#fb7185" fill-opacity="0.15" stroke="#fb7185" stroke-width="4"/>
+    <path d="M914 180 L926 193 L949 165" stroke="#fda4af" stroke-width="7"/>
+    <rect x="700" y="152" width="104" height="30" rx="15" fill="#f8fafc" fill-opacity="0.08" stroke="#fb7185" stroke-opacity="0.6" stroke-width="2"/>
+    <text x="752" y="172" font-family="ui-monospace, Menlo, monospace" font-size="14" fill="#fda4af" stroke="none" text-anchor="middle">bounded</text>
+  </g>
+
+  <!-- corner credit -->
+  <text x="1160" y="334" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#94a3b8" text-anchor="end">by <tspan fill="#fda4af">MlvPtL</tspan></text>
+</svg>
